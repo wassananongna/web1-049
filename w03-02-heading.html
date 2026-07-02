@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heading</title>
+    <style>
+        *{
+            box-sizing: border-box ;
+            margin:0;
+            padding: 0;
+        }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(217, 225, 233);
+        line-height: 1.6;
+      }
+      .header{
+        background: linear-gradient(to right, tomato,pink) ;
+        text-align: center;
+        padding: 20px;
+        color: beige;
+      }
+      .header a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .container {
+        max-width: 1800px;
+        margin:0 auto;
+      }
+      .hero {
+        padding: 50px 50px;
+
+      }
+      .text-title {
+        color: rgb(119, 16, 0);
+        font-size: 24px;
+      }
+      .text-center {
+        text-align: center;
+      }
+
+      .card {
+        background-color: aliceblue;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 -4px 5px #f39c9c;
+        margin-bottom: 25px;
+      }
+      .label{
+        pading:2px :
+      }
+      .h1-label { background-color: tomato;}
+      .h1-label { background-color: pink;}
+
+
+      pre {
+        background-color: #ffc0cb ;
+        border-left:4px solid #500000 ;
+        padding-top: 20px;
+        font-size: 16px;
+      }
+
+      .note {
+        color: #0101b1;
+        background-color: #ffa798;
+      }
+      .note::before {
+        content: "📍";
+
+      }
+
+
+      
+    </style>
+  </head>
+
+  <body >
+    <section class="header">
+        <h1>เรียนรู้เว็บเบื้องต้น</h1>
+        <a href = "index.html">Home</a>
+        
+
+    </section>
+
+
+    <div class="container">
+      <div class="|">
+        <div class="hero">
+            <h1 class = "text-title">Workshop: HTML Heading</h1>
+            <p>ฝึกใช้แท็ก &lt;h1> – &lt;h6> และการปรับขนาดหัวข้อด้วย CSS</p>
+        </div>
+        <div class = "card">
+          <h2>1. ความหมายของ Headings</h2>
+          <p>HTML มีหัวข้อทั้งหมด 6 ระดับ</p>
+          <ul>
+            <li><span class ="label h1-label">H1</span> – หัวข้อใหญ่สุด ใช้สำหรับชื่อหน้าเว็บหรือหัวข้อหลัก</li>
+            <li><span class ="h2-label">H2</span> – หัวข้อรอง แบ่ง Section ของเนื้อหา</li>
+            <li><span class ="h3-label"></span>H3</span> – หัวข้อย่อยภายใน H2</li>
+            <li><span class ="h4-label"></span>H4</span> – ย่อยลงไปอีกระดับ</li>
+            <li><span class ="h5-label"></span>H5</span> – ใช้น้อย แต่เน้นลำดับข้อมูล</li>
+            <li><span class ="h6-label"></span>H6</span> – เล็กสุด ใช้กับหัวข้อระดับลึก</li>
+          </ul>
+        <p class = "note" style="border-left: 4px solid tomato;">💡 H1 ควรมีเพียง 1 อันในแต่ละหน้า เพื่อช่วย SEO และโครงสร้างเอกสาร</p>
+        </div>
+        <div class="card">
+          <h2>2. ตัวอย่างการใช้H6</h2>
+          <pre>
+            <code>
+              &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+              &lt;h2&gt;HTML Basics&lt;/h2&gt;
+              &lt;h3&gt;What is HTML?&lt;/h3&gt;
+              &lt;h4&gt;HTML Syntax&lt;/h4&gt;
+              &lt;h5&gt;Example Code&lt;/h5&gt;
+              &lt;h6&gt;Note: Case Sensitive&lt;/h6&gt;
+            </code>
+          </pre>
+            <h1>H1: Welcome to My Website</h1>
+            <h2>H2: HTML Basics</h2>
+            <h3>H3: What is HTML?</h3>
+            <h4>H4: HTML Syntax</h4>
+            <h5>H5: Example Code</h5>
+            <h6>H6: Note about heading size</h6>
+        </div>
+      </div>
+      
+    </div>
+
+
+  </body>
+</html>
+                      
