@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #ebf8ff;
-    
+
     line-height: 1.6;
 }
 
@@ -15,12 +15,23 @@ footer,
 /* .hero, */
 /* .card, */
 .tip-box {
-    border: 1px solid #ff0000;
-    background-color: #fff;
+    border-radius: 15px tomato;
+    background-color: #7e640ee1;
     margin: 20px;
     padding: 20px;
 }
 
+.tip-box-b {
+    background-color: #fff;
+
+    border-radius: 16px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.11);
+    border: 1px solid #c8cd7f;
+
+    overflow: hidden;
+
+
+}
 /* ================================
               Header
 =================================== */
@@ -41,8 +52,13 @@ header {
     gap: 10px;
 }
 
-.brand-icon { font-size: 50px; }
-.brand-text p { font-size: 14px}
+.brand-icon {
+    font-size: 50px;
+}
+
+.brand-text p {
+    font-size: 14px
+}
 
 /* navigation */
 nav a {
@@ -79,11 +95,9 @@ nav a:hover {
     font-size: 40px;
     font-weight: bold;
 
-    
+
 
 }
-
-.hero-text {}
 
 .hero-text h1 {
     font-size: 40px;
@@ -129,88 +143,231 @@ nav a:hover {
 }
 
 .card-header {
-  background-color: #fff6f6;
+    background-color: #fff6f6;
 
-  font-size: 18px;
-  font-weight: bold;
+    font-size: 18px;
+    font-weight: bold;
 
-  padding: 18px;
-  border-bottom: 1px solid #7f86cd;
+    padding: 18px;
+    border-bottom: 1px solid #7f86cd;
 
 
 }
 
 .card-header-icon {
-  background-color: #1a2d78;
-  color: white;
+    background-color: #3b5de6;
+    color: white;
 
-  /* padding: 10px; */
-  border-radius: 50%;
-  width: 38px;
-  height: 38px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  
+    /* padding: 10px; */
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 
+
+}
+
+.purple-bg {
+    background-color: #3b5ae6;
+}
+
+.purple-text {
+    color: #3b5ae6;
+}
+
+.yellow-bg {
+    background-color: #facf42;
+}
+
+.yellow-text {
+    color: #facf42;
+    margin: 10px;
+
+    font-size: 25px;
+    /* font-weight: bold; */
 }
 
 .card-body {
-  padding: 20px;
-
-
+    padding: 20px;
 
 }
-.format-row {
-  display: grid;
-  grid-template-columns: 100px 1fr;
-  gap: 20px;
 
-  border-bottom: 1px solid #e4e6f1;
-  padding: 8px 0;
- 
+.format-row {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 20px;
+
+    border-bottom: 1px solid #e4e6f1;
+    padding: 8px 0;
+
 }
 
 .label {
 
-  /* padding: 4px 50px; */
-  border-radius: 8px;
+    /* padding: 4px 50px; */
+    border-radius: 8px;
 
-  color: white;
-  font-weight: bold;
+    color: white;
+    font-weight: bold;
 
-  text-align: center;
+    text-align: center;
 
 
 }
-.b-label {background-color: tomato;}
-.strong-label {background-color: rgb(250, 207, 66);}
-.i-label {background-color: rgb(155, 250, 66);}
-.em-label {background-color: rgb(66, 192, 250);}
-.u-label {background-color: rgb(0, 143, 148);}
-.mark-label {background-color: rgb(0, 76, 148);}
-.sm-label  {background-color: rgb(52, 0, 148);}
-.del-label  {background-color: rgb(148, 0, 141);}
-.sup-label  {background-color: rgb(224, 138, 199);}
-.sub-label  {background-color: rgb(216, 89, 120);}
+
+.b-label {
+    background-color: tomato;
+}
+
+.strong-label {
+    background-color: #facf42;
+}
+
+.i-label {
+    background-color: rgb(155, 250, 66);
+}
+
+.em-label {
+    background-color: #42c0fa;
+}
+
+.u-label {
+    background-color: #008f94;
+}
+
+.mark-label {
+    background-color: rgb(0, 76, 148);
+}
+
+.sm-label {
+    background-color: rgb(52, 0, 148);
+}
+
+.del-label {
+    background-color: rgb(148, 0, 141);
+}
+
+.sup-label {
+    background-color: rgb(224, 138, 199);
+}
+
+.sub-label {
+    background-color: rgb(216, 89, 120);
+}
+
+
 
 /* card 2 */
 .pre-box {
-  background-color: black;
-  border-radius: 10px;
-  padding: 20px;
-  color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
 
 }
 
 .html-tag {
-  color: tomato;
+    color: tomato;
 
 
 }
 
 .line-no {
-  color: #9c9c9c;
-  display: inline-block;
-  width: 20px;
+    color: #9c9c9c;
+    display: inline-block;
+    width: 20px;
+}
+
+/* card 3 */
+
+.activity-list {
+    list-style: none;
+}
+
+
+.activity-list li {
+    margin-bottom: 22px;
+
+
+}
+
+
+.check {
+    background-color: darksalmon;
+
+    /* padding: 10px; */
+    border-radius: 50%;
+
+    display: inline-flex;
+    height: 38px;
+    width: 38px;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+
+
+
+}
+
+.check-1 {
+    background-color: #008f94;
+}
+
+.check-2 {
+    background-color: #42c0fa;
+}
+
+.check-3 {
+    background-color: tomato;
+}
+
+.check-4 {
+    background-color: #facf42;
+}
+
+.check-5 {
+    background-color: #d85978;
+}
+
+;
+
+
+.highlights {
+
+    padding: 4px 50px;
+    border-radius: 20px;
+
+    color: rgb(255, 255, 255);
+
+
+}
+
+.highlights-1 {
+    padding: 4px 10px;
+    border-radius: 8px;
+
+    color: tomato;
+    font-weight: bold;
+
+
+}
+
+.matting-label {
+    background-color: #f0c26042;
+}
+
+.bun {
+    margin: 4px 50px;
+}
+
+.bun-tag {
+    color: #008f94;
+
+    font-size: 20px;
+    font-weight: bold;
 }
