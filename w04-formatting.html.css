@@ -374,7 +374,7 @@ nav a:hover {
 }
 
 .footer {
-    background-color: #144997;
+    background-color: #008f94;
     color: #ffffff;
 
     padding: 40px 60px 20px;
@@ -420,7 +420,7 @@ nav a:hover {
 
 
 .footer-bottom {
-    border-top: 1px solid #e08ac7;
+    border-top: 1px solid tomato;
     color: #f1f2f5;
 
     padding-top: 20px;
