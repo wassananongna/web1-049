@@ -11,12 +11,12 @@ body {
     line-height: 1.6;
 }
 
-footer,
+
 /* .hero, */
 /* .card, */
 .tip-box {
     border-radius: 15px tomato;
-    background-color: #7e640ee1;
+    background-color: #0e287ee1;
     margin: 20px;
     padding: 20px;
 }
@@ -32,6 +32,7 @@ footer,
 
 
 }
+
 /* ================================
               Header
 =================================== */
@@ -250,7 +251,7 @@ nav a:hover {
 }
 
 .sup-label {
-    background-color: rgb(224, 138, 199);
+    background-color: #e08ac7;
 }
 
 .sub-label {
@@ -370,4 +371,60 @@ nav a:hover {
 
     font-size: 20px;
     font-weight: bold;
+}
+
+.footer {
+    background-color: #144997;
+    color: #ffffff;
+
+    padding: 40px 60px 20px;
+}
+
+.footer-top {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 30px;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-col h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.footer-col a {
+    color: #eff1f3;
+
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.footer-col a:hover {
+    color: #ffffff;
+}
+
+.footer-col p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+
+    color: #f4f6f8;
+}
+
+
+.footer-bottom {
+    border-top: 1px solid #e08ac7;
+    color: #f1f2f5;
+
+    padding-top: 20px;
+    text-align: center;
+    font-size: 0.85rem;
+
 }
