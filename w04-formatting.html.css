@@ -227,7 +227,7 @@ nav a:hover {
 }
 
 .i-label {
-    background-color: rgb(155, 250, 66);
+    background-color: #9bfa42;
 }
 
 .em-label {
@@ -247,7 +247,7 @@ nav a:hover {
 }
 
 .del-label {
-    background-color: rgb(148, 0, 141);
+    background-color: #94008d;
 }
 
 .sup-label {
@@ -255,7 +255,7 @@ nav a:hover {
 }
 
 .sub-label {
-    background-color: rgb(216, 89, 120);
+    background-color: #d85978;
 }
 
 

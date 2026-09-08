@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: "Noto Serif Thai", Courier, monospace;
+
+    background-color: #ebf8ff;
+
+    line-height: 1.6;
+}
+
+/* pre {
+    background-color: rgb(129, 163, 224);
+    padding: 10px;
+    border-left: 4px solid;
+    white-space: pre-wrap;
+    font-size: 16px;
+}
+ */
+a {
+    text-decoration: none;
+
+}
+
+
+
+.card-body-grid {
+    display: grid;
+    grid-template-columns: 0.75fr 1.25fr;
+    gap: 20px;
+    padding: 15px;
+}
+
+.result-panel,
+.code-panel {
+    border: 1px solid #008f94;
+    border-radius: 10px;
+    gap: 15px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+
+a:hover {
+    color: tomato;
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    background-color: #a7d3f7e0;
+}
+
+.site-header {
+    background: linear-gradient(90deg, #032081, #5898f8, #86caf8);
+
+
+    align-items: center;
+    padding: 40px;
+ 
+}
+
+.brand {
+    display: flex;
+    text-align: center;
+    gap: 15px;
+    align-items: center;
+    color: #032081;
+}
+
+.brand-text h2 {
+    font-size: 26px;
+    margin: 14px;
+}
+
+.tip-box {
+    
+}
+
+.tip-box-b {
+    background-color: #fff;
+
+    border: 1px solid #5898f8, ;
+    border-radius: 10px;
+
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.11);
+
+    overflow: hidden;
+
+}
+
+.card-header-icon {
+    background-color: #3b5de6;
+    color: white;
+
+    /* padding: 10px; */
+    border-radius: 50%;
+    /* width: 38px;
+    height: 38px; */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.Topics-text {
+    color: #d85978;
+
+    text-shadow: 1px 2px 8px pink;
+    font-size: 25px;
+  
+    justify-content: center;
+    text-align: center;
+    /* font-weight: bold; */
+}
+
+.mushrom {
+
+    background-color: pink;
+    color: white;
+
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+
+}
+
+.incard1 {
+    padding: 10px;
+
+    margin-right: 200px;
+    text-decoration: none;
+
+}
+.card-Introduction {
+    color: #032081;
+    border: 1px solid tomato;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(105, 105, 105, 0.667);
+    margin: 20px;
+  background: linear-gradient(90deg, #f87a64, #f7a597, #f5cac2);
+}
+.Introduction-box {
+    border-radius: 15px tomato;
+      background: linear-gradient(90deg,pink, hsl(350, 96%, 72%));
+
+    border: 1px solid #47daff;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+
+    border: 1px solid #5898f8, ;
+    border-radius: 10px;
+
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.11);
+
+    overflow: hidden;
+}
+.Introduction-text{
+color:white ;
+}
+
+
+.card-Structure {
+    color: #032081;
+    border: 1px solid #fcd965;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(105, 105, 105, 0.667);
+    margin: 20px;
+  background: linear-gradient(90deg, #fcb738, #fac35e, #fde7a0);
+}
+.Structure-box {
+    border-radius: 15px tomato;
+      background: linear-gradient(90deg,rgb(246, 255, 192), rgb(248, 220, 96));
+
+    border: 1px solid #47daff;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+
+    border: 1px solid #5898f8, ;
+    border-radius: 10px;
+
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.11);
+
+    overflow: hidden;
+}
+.Structure-text{
+color:white ;
+}
+
+
+.card-Heading {
+    color: #032081;
+    border: 1px solid #008f94;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(105, 105, 105, 0.667);
+    margin: 20px;
+  background: linear-gradient(90deg, #008f94, #02aeb4, #17c6cc);
+}
+.Heading-box {
+    border-radius: 15px tomato;
+      background: linear-gradient(90deg,#17cccc, #005e94);
+
+    border: 1px solid #47daff;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+
+    border: 1px solid #5898f8, ;
+    border-radius: 10px;
+
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.11);
+
+    overflow: hidden;
+}
+.Heading-text{
+color:white ;
+}
+.card-Paragraph {
+    color: #032081;
+    border: 1px solid pink;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(105, 105, 105, 0.667);
+    margin: 20px;
+  background: linear-gradient(90deg, rgb(248, 97, 122), #fda7b6,pink);
+}
+.Paragraph-box {
+    border-radius: 15px pink;
+      background: linear-gradient(90deg,pink, #fda7b6);
+
+    border: 1px solid #47daff;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+
+    border: 1px solid #5898f8, ;
+    border-radius: 10px;
+
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.11);
+
+    overflow: hidden;
+}
