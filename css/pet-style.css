@@ -11,46 +11,48 @@ html {
 
 body {
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-    line-height: 1.6;
-    color:var(--text-color);
-    background:linear-gradient(135deg,#fae9ec,#f0d4d9,#89b8f1) ;
+    line-height: 0.9;
+    color: var(--text-color);
+    background: linear-gradient(135deg, #fae9ec, #f0d4d9, #89b8f1);
+
 }
 
-.container {}
+
 
 :root {
     /* สีของเว็บ */
-    --primary-color :#65b6f8;
-    --primary-dark-color :#022d50;
-    --secondary-color :#c8b0f5;
-    --secodery-dark-clor:#29036e;
+    --primary-color: #65b6f8;
+    --primary-dark-color: #022d50;
+    --secondary-color: #c8b0f5;
+    --secodery-dark-clor: #29036e;
 
     /* เงา */
-    --header-shadow:0 4px 8px #cccccc;
-    --card-shadow:0 3px 10px rgb(196, 196, 219);
+    --header-shadow: 0 4px 8px #cccccc;
+    --card-shadow: 0 3px 10px rgb(196, 196, 219);
 
 
     /* สีขอบ */
-    --border-color:#97a8c2;
+    --border-color: #97a8c2;
 
 
     /* สีข้อความ */
-    --text-color :navy;
+    --text-color: navy;
 
-    --nav-text-color:#636377;
+    --nav-text-color: #636377;
 
-    --light-text-clor :#ffffff;
+    --light-text-clor: #ffffff;
 
 
 
 
     /* สีพื้น */
-    --btn-bg-color :#a6a6f7;
+    --btn-bg-color: #a6a6f7;
 
-    --footer-bg-color :black;
+    --footer-bg-color: black;
 
 
 }
+
 
 /* ======================
         Header
@@ -63,9 +65,7 @@ body {
     background-color: #022d50a4;
     text-align: center;
     align-items: center;
-    box-shadow:var(--header-shadow)
-
-    
+    box-shadow: var(--header-shadow)
 }
 
 
@@ -79,8 +79,10 @@ body {
     color: var(--primary-color);
 
 }
+
 .header-subtitle {
     color: var(--border-color);
+    margin-top: 0.8rem;
 }
 
 
@@ -92,14 +94,14 @@ body {
 ========================= */
 
 nav {
-    padding-block: 2.5rem ;
+    padding-block: 2.5rem;
     text-align: center;
 }
 
 nav a {
     text-decoration: none;
     color: var(--nav-text-color);
-    padding: 0.7rem 1.7rem ;
+    padding: 0.7rem 1.7rem;
     box-shadow: var(--card-shadow);
     border-radius: 999px;
     margin-right: 0.3rem;
@@ -132,30 +134,34 @@ nav a.active {
 
 .pet-title {
     text-align: center;
-    margin-bottom:1.5rem ;
+    margin-bottom: 1.5rem;
     color: var(--primary-dark-color);
-    
+
 }
+
 .pet-grid {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 0.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.55rem;
 }
+
 .pet-card {
     border: var(--border-color);
     box-shadow: var(--card-shadow);
-    border-radius: 0.75rem ;
+    border-radius: 0.75rem;
     overflow: hidden;
 
     transition: 0.3s;
-   
+
 }
-.pet-card img{
-    height: 16rem;
+
+.pet-card img {
+    height: 20rem;
     width: 100%;
     object-fit: cover;
 
 }
+
 .pet-card:hover {
     transform: translateY(-10px);
 
@@ -168,9 +174,87 @@ nav a.active {
 
 
 }
+
 .pet-content h2 {
     columns: var(--primary-dark-color);
 }
+
+
+/* ======================
+       tipbox
+========================= */
+.head-tip {
+    text-align: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.tip-box {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.tip-card {
+
+    background-color: white;
+    box-shadow: 0 4px 12px #6969696a;
+
+
+    margin: 2.2rem;
+    border-radius: 1rem;
+    padding: 1.6rem;
+ 
+    width: 82.5rem;
+
+    text-align: center;
+    align-items: center;
+
+}
+.tip-b {
+    margin: 1rem;
+    color: var(--primary-dark-color);
+}
+
+.tip-tager {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+
+}
+
+.tip-box-tag {
+
+
+ 
+    padding: 0.7rem;
+    /* font-size: 0.9rem; */
+    line-height: 1.2;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+
+    text-align: left;
+    margin: 0.5rem;
+  border-radius: 1rem;
+    
+}
+.tag {
+    margin: 0.5rem;
+    text-align: left;
+    
+}
+.color-box-x { background-color:#eed171d0 ;}
+.color-box-y {background-color: #e08ac8b9;}
+.color-box-z {background-color: #fa8a76b9;}
+.color-box-o {background-color: #04bcc2b4 ;}
+
+
+
 
 /* ======================
         Footer
@@ -181,8 +265,11 @@ footer {
 
     text-align: center;
 
-    padding-block: 2rem ;
-    margin-top: 1rem ;
+    padding-block: 2rem;
+    margin-top: 1rem;
+    /* padding: rem; */
+
+
 }
 
 /* ======================
