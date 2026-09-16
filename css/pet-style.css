@@ -10,10 +10,15 @@ html {
 }
 
 body {
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+
     line-height: 0.9;
     color: var(--text-color);
     background: linear-gradient(135deg, #fae9ec, #f0d4d9, #89b8f1);
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
 
 }
 
@@ -194,6 +199,7 @@ nav a.active {
     display: flex;
     justify-content: center;
     align-items: center;
+  
 
 
 
@@ -262,12 +268,10 @@ nav a.active {
 footer {
     background-color: var(--footer-bg-color);
     color: var(--light-text-clor);
-
     text-align: center;
 
     padding-block: 2rem;
-    margin-top: 1rem;
-    /* padding: rem; */
+    margin-top: auto;
 
 
 }
