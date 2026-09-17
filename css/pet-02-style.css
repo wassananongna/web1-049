@@ -1,0 +1,403 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* font-size: 16px; */
+}
+
+body {
+  line-height: 0.9;
+  color: var(--text-color);
+  background: linear-gradient(135deg, #fae9ec, #f0d4d9, #89b8f1);
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+:root {
+  /* สีของเว็บ */
+  --primary-color: #65b6f8;
+  --primary-dark-color: #022d50;
+  --secondary-color: #c8b0f5;
+  --secodery-dark-clor: #29036e;
+
+  /* เงา */
+  --header-shadow: 0 4px 8px #cccccc;
+  --card-shadow: 0 3px 10px rgb(196, 196, 219);
+
+  /* สีขอบ */
+  --border-color: #97a8c2;
+
+  /* สีข้อความ */
+  --text-color: navy;
+
+  --nav-text-color: #636377;
+
+  --light-text-clor: #ffffff;
+
+  /* สีพื้น */
+  --btn-bg-color: #a6a6f7;
+
+  --footer-bg-color: black;
+  --mute-bg-color:#d7eafcd5;
+}
+
+/* ======================
+        Header
+========================= */
+.header {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+
+  background-color: #022d50a4;
+  text-align: center;
+  align-items: center;
+  box-shadow: var(--header-shadow);
+}
+
+.header-content {
+  text-align: center;
+  padding-block: 1.5rem;
+}
+
+.header-title {
+  color: var(--primary-color);
+}
+
+.header-subtitle {
+  color: var(--border-color);
+  margin-top: 0.8rem;
+}
+
+/* ======================
+       nav
+========================= */
+
+.category-nav {
+  padding-block: 2.5rem;
+  text-align: center;
+
+  
+
+}
+
+.category-nav label{
+
+  color: var(--nav-text-color);
+  padding: 0.7rem 1.7rem;
+  box-shadow: var(--card-shadow);
+  border-radius: 999px;
+  margin-right: 0.3rem;
+  background-color: var(--light-text-clor);
+  transition: transform 0.5s;
+  display: inline-block;
+}
+
+nav a:hover {
+  transform: translateY(-10px);
+}
+
+/* hide filter */
+.filter-radio{
+
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path:inset(50%);
+
+
+}
+/* show filter*/
+
+#filter-all:checked ~ .category-nav label[for="filter-all"], 
+#filter-dog:checked ~ .category-nav label[for="filter-dog"],
+#filter-cat:checked ~ .category-nav label[for="filter-cat"],
+#filter-bird:checked ~ .category-nav label[for="filter-bird"],
+#filter-fish:checked ~ .category-nav label[for="filter-fish"],
+#filter-small-pet:checked ~ .category-nav label[for="filter-small-pet"]{
+  background-color:var(--btn-bg-color) ;
+  color: var(--light-text-clor);
+}
+
+/* hide title */
+.category-hide {
+  display: none;
+}
+/* show title */
+#filter-all:checked ~ main .show-all,
+#filter-dog:checked ~ main .show-dog,
+#filter-cat:checked ~ main .show-cat,
+#filter-bird:checked ~ main .show-bird,
+#filter-fish:checked ~ main .show-fish,
+#filter-small-pet:checked ~ main .show-small-pet
+{
+  display: inline;
+}
+
+/* hide card-pet */
+
+
+#filter-dog:checked ~ main .pet-card ,
+#filter-cat:checked ~ main .pet-card ,
+#filter-bird:checked ~ main .pet-card ,
+#filter-fish:checked ~ main .pet-card ,
+#filter-small-pet:checked ~ main .pet-card 
+{
+  display: none;
+}
+
+
+/* show card-pet */
+
+#filter-dog:checked ~ main .show-dog,
+#filter-cat:checked ~ main .show-cat,
+#filter-bird:checked ~ main .show-bird,
+#filter-fish:checked ~ main .show-fish,
+#filter-small-pet:checked ~ main .show-small-pet
+
+{
+  display: block;
+}
+
+
+
+nav a.active {
+  background-color: var(--btn-bg-color);
+  color: var(--light-text-clor);
+}
+
+/* ======================
+       main
+========================= */
+.container {
+  max-width: 1320px;
+  margin: auto;
+}
+
+.pet-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--primary-dark-color);
+}
+
+.pet-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.55rem;
+
+}
+
+.pet-card {
+  border: var(--border-color);
+  box-shadow: var(--card-shadow);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  margin: 1rem;
+  transition: 0.3s;
+}
+
+.pet-card img {
+  height: 19rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.pet-card:hover {
+  transform: translateY(-10px);
+}
+
+.pet-content {
+  padding: 1.3rem;
+  background-color: #faeee9;
+}
+
+.pet-content h2 {
+  columns: var(--primary-dark-color);
+}
+
+/* ======================
+       tipbox
+========================= */
+.head-tip {
+  text-align: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.tip-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tip-card {
+  background-color: white;
+  box-shadow: 0 4px 12px #6969696a;
+
+  margin: 2.2rem;
+  border-radius: 1rem;
+  padding: 1.6rem;
+
+  width: 82.5rem;
+
+  text-align: center;
+  align-items: center;
+}
+.tip-b {
+  margin: 1rem;
+  color: var(--primary-dark-color);
+}
+
+.tip-tager {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.tip-box-tag {
+  padding: 0.7rem;
+  /* font-size: 0.9rem; */
+  line-height: 1.2;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+
+  text-align: left;
+  margin: 0.5rem;
+  border-radius: 1rem;
+}
+.tag {
+  margin: 0.5rem;
+  text-align: left;
+}
+.color-box-x {
+  background-color: #eed171d0;
+}
+.color-box-y {
+  background-color: #e08ac8b9;
+}
+.color-box-z {
+  background-color: #fa8a76b9;
+}
+.color-box-o {
+  background-color: #04bcc2b4;
+}
+
+
+
+
+/* ======================
+        Footer
+========================= */
+footer {
+  background-color: var(--footer-bg-color);
+  color: var(--light-text-clor);
+  text-align: center;
+
+  padding-block: 2rem;
+  margin-top: auto;
+}
+
+
+/* ======================
+        เลือกประเภทสัตว์เลี้ยง
+========================= */
+
+.form-radio {
+  background-color: white;
+  box-shadow: 0 4px 12px #6969696a;
+  margin: 2rem;
+  border-radius: 1rem;
+  padding: 1.6rem;
+  width: 82.5rem;
+
+}
+.form-radio h2 {
+  text-align: center;
+  color:#022d50;
+    margin: 0.5rem;
+
+}
+.form-radio p {
+  text-align: center;
+  color: #636377;
+    margin: 0.9rem;
+
+
+}
+.form-radio fieldset {
+  padding: 1.5rem;
+  border-color: var(--border-color);
+  border-radius: 0.7rem;
+}
+.form-radio legend {
+  padding: 0 0.5rem ;
+  color:#022d50;
+  font-weight: bold;
+
+}
+.form-radio legend {
+  padding: 0 0.5rem ;
+  color:#022d50;
+  font-weight: bold;
+ 
+
+}
+.radio-option {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap:wrap ;
+  
+
+}
+.radio-item label {
+  background-color:var(--mute-bg-color);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  color:var(--text-color);
+
+  cursor: pointer;
+}
+.radio-item input {
+  accent-color: var(--btn-bg-color);
+}
+
+.radio-item input:checked + label {
+  background-color:var(--secondary-color);
+  color: var(--light-text-clor);
+
+
+}
+.reset-btn {
+  background-color: var(--mute-bg-color);
+
+  padding: 0.5rem 1rem ;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: none; 
+  display: block;
+  margin: 2rem auto 0 ;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ======================
+        Responsive
+========================= */

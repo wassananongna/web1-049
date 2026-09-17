@@ -155,7 +155,7 @@ nav a.active {
     box-shadow: var(--card-shadow);
     border-radius: 0.75rem;
     overflow: hidden;
-
+      margin: 1rem;
     transition: 0.3s;
 
 }
