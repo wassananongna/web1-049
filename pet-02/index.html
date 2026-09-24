@@ -1,265 +1,626 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wdth@62.5..100&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wdth@62.5..100&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 
     <title>คู่มือสัตว์เลี้ยง</title>
 
-    <link rel="stylesheet" href="../css/pet-02-style.css">
+    <link rel="stylesheet" href="../css/pet-02-style.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- Header section -->
     <header class="header">
-        <div class="header-content">
-            <h1 class="header-title"><i class="fa-solid fa-paw"></i> คู่มือสัตว์เลี้ยง</h1>
-            <p class="header-subtitle">ค้นพบสัตว์เลี้ยงที่เหมาะกับคุณ</p>
-        </div>
+      <div class="header-content">
+        <h1 class="header-title">
+          <i class="fa-solid fa-paw"></i> คู่มือสัตว์เลี้ยง
+        </h1>
+        <p class="header-subtitle">ค้นพบสัตว์เลี้ยงที่เหมาะกับคุณ</p>
+      </div>
     </header>
-
 
     <!--  radio button for pet  -->
 
-    
-        <input class="filter-radio   " type="radio" id="filter-all" name="fav-pet" checked>
-        <input class="filter-radio" type="radio" id="filter-dog" name="fav-pet" >
-        <input class="filter-radio" type="radio" id="filter-cat" name="fav-pet" >
-        <input class="filter-radio" type="radio" id="filter-bird" name="fav-pet">
-        <input class="filter-radio" type="radio" id="filter-fish" name="fav-pet" >
-        <input class="filter-radio" type="radio" id="filter-small-pet" name="fav-pet" >
-
-
-
-
+    <input
+      class="filter-radio"
+      type="radio"
+      id="filter-all"
+      name="fav-pet"
+      checked
+    />
+    <input class="filter-radio" type="radio" id="filter-dog" name="fav-pet" />
+    <input class="filter-radio" type="radio" id="filter-cat" name="fav-pet" />
+    <input class="filter-radio" type="radio" id="filter-bird" name="fav-pet" />
+    <input class="filter-radio" type="radio" id="filter-fish" name="fav-pet" />
+    <input
+      class="filter-radio"
+      type="radio"
+      id="filter-small-pet"
+      name="fav-pet"
+    />
 
     <!--  navbar  -->
     <nav class="category-nav">
-        <label for="filter-all"> <i class="fa-solid fa-house"></i> ทั้งหมด</label>
-        <label for="filter-dog"><i class="fa-solid fa-dog"></i> สุนัข</label>
-        <label for="filter-cat"><i class="fa-solid fa-cat"></i> แมว</label>
-        <label for="filter-bird"><i class="fa-solid fa-dove"></i> นก</label>
-        <label for="filter-fish"><i class="fa-solid fa-fish-fins"></i> ปลา</label>
-        <label for="filter-small-pet"><i class="fa-solid fa-dragon"></i> สัตว์ขนาดเล็ก</label>
-
-
-
+      <label for="filter-all"> <i class="fa-solid fa-house"></i> ทั้งหมด</label>
+      <label for="filter-dog"><i class="fa-solid fa-dog"></i> สุนัข</label>
+      <label for="filter-cat"><i class="fa-solid fa-cat"></i> แมว</label>
+      <label for="filter-bird"><i class="fa-solid fa-dove"></i> นก</label>
+      <label for="filter-fish"><i class="fa-solid fa-fish-fins"></i> ปลา</label>
+      <label for="filter-small-pet"
+        ><i class="fa-solid fa-dragon"></i> สัตว์ขนาดเล็ก</label
+      >
     </nav>
-
 
     <!-- main -->
 
     <main class="container">
+      <h2 class="pet-title">
+        <span class="category-hide show-all">สัตว์เลี้ยงทั้งหมด</span>
+        <span class="category-hide show-dog">น้องสุนัข</span>
+        <span class="category-hide show-cat">น้องแมว</span>
+        <span class="category-hide show-bird">น้องนก</span>
+        <span class="category-hide show-fish">น้องปลา</span>
+        <span class="category-hide show-small-pet">น้องที่เป็นพวกตัวเล็ก</span>
+      </h2>
 
+      <div class="pet-grid">
+        <article class="pet-card show-dog">
+          <img
+            src="https://i.pinimg.com/1200x/7c/4e/d8/7c4ed816a33088ee7d9ff4e930a044d1.jpg"
+            alt="โกลเด้น รีทรีฟเวอร์"
+          />
 
-        <h2 class="pet-title">
-            <span class="category-hide show-all">สัตว์เลี้ยงทั้งหมด</span>
-            <span class="category-hide show-dog">น้องสุนัข</span>
-            <span class="category-hide show-cat">น้องแมว</span>
-            <span class="category-hide show-bird">น้องนก</span>
-            <span class="category-hide show-fish">น้องปลา</span>
-            <span class="category-hide show-small-pet">น้องที่เป็นพวกตัวเล็ก</span>
+          <div class="pet-content">
+            <h2>โกลเด้น รีทรีฟเวอร์</h2>
+            <p class="breed">Golden Retriever</p>
 
+            <ul class="pet-info">
+              <li class="info-lifespan">
+                <i class="fa-regular fa-clock"></i>
+                อายุขัย: 10–12 ปี
+              </li>
+              <li class="info-size">
+                <i class="fa-solid fa-ruler"></i>
+                ขนาด: ใหญ่ (25–32 กก.)
+              </li>
+              <li class="info-temperament">
+                <i class="fa-regular fa-heart"></i>
+                นิสัย: เป็นมิตร ฉลาด และภักดี
+              </li>
+            </ul>
+            <details class="pet-details">
+              <summary class="pet-btn">
+                <i class="fa-solid fa-circle-info"></i>
+                <span class="show-detail">ดูรายละเอียด</span>
+                <span class="hide-detail">ซ่อนรายละเอียด</span>
+              </summary>
 
-        </h2>
+              <div class="pet-details-body">
+                <section>
+                  <h4>📝 รายละเอียด</h4>
+                  <p>
+                    สุนัขพันธุ์โกลเด้นเป็นสุนัขที่เป็นมิตรและรักครอบครัวมาก
+                    เหมาะสำหรับครอบครัวที่มีเด็ก มีสติปัญญาสูงและฝึกได้ง่าย
+                  </p>
+                </section>
+                <section>
+                  <h4>🏥 การดูแล</h4>
+                  <p>ออกกำลังกายสูง และหวีขนทุกวัน</p>
+                </section>
+              </div>
+            </details>
 
+            <!-- <p>สุนัขที่เป็นมิตร ฉลาด ภักดี และรักครอบครัว</p> -->
+            <!-- <p><a href="dog.html">ดูข้อมูลสุนัขเพิ่มเติม</a></p> -->
+          </div>
+        </article>
 
-        <div class="pet-grid">
-            <article class="pet-card show-dog">
-                <img src="https://i.pinimg.com/1200x/7c/4e/d8/7c4ed816a33088ee7d9ff4e930a044d1.jpg"
-                    alt="โกลเด้น รีทรีฟเวอร์">
+        <article class="pet-card show-dog">
+          <img
+            src="https://i.pinimg.com/1200x/bc/29/b2/bc29b228bd04a54a6375f3ab59ffbff7.jpg"
+            alt="ไซบีเรียน ฮัสกี้"
+          />
 
-                <div class="pet-content ">
-                    <h2>โกลเด้น รีทรีฟเวอร์</h2>
-                    <p class="breed">Golden Retriever</p>
-                    <p>สุนัขที่เป็นมิตร ฉลาด ภักดี และรักครอบครัว</p>
-                    <p><a href="dog.html">ดูข้อมูลสุนัขเพิ่มเติม</a></p>
-                </div>
-            </article>
+          <div class="pet-content">
+            <h2>ไซบีเรียน ฮัสกี้</h2>
+            <p class="breed">Siberian Husky</p>
 
-            <article class="pet-card show-dog">
-                <img src="https://i.pinimg.com/1200x/bc/29/b2/bc29b228bd04a54a6375f3ab59ffbff7.jpg"
-                    alt="ไซบีเรียน ฮัสกี้">
+            <ul class="pet-info">
+              <li class="info-lifespan">
+                <i class="fa-regular fa-clock"></i>
+                อายุขัย: 12–14 ปี
+              </li>
+              <li class="info-size">
+                <i class="fa-solid fa-ruler"></i>
+                ขนาด: กลาง–ใหญ่ (16–27 กก.)
+              </li>
+              <li class="info-temperament">
+                <i class="fa-regular fa-heart"></i>
+                นิสัย: กระตือรือร้น เป็นมิตร และดื้อรั้น
+              </li>
+            </ul>
 
-                <div class="pet-content">
-                    <h2>ไซบีเรียน ฮัสกี้</h2>
-                    <p class="breed">Siberian Husky</p>
-                    <p>สุนัขพลังงานสูง เป็นมิตร และต้องออกกำลังกายมาก</p>
-                    <p><a href="dog.html">ดูข้อมูลสุนัขเพิ่มเติม</a></p>
-                </div>
-            </article>
+            <details class="pet-details">
+              <summary class="pet-btn">
+                <i class="fa-solid fa-circle-info"></i>
+                <span class="show-detail">ดูรายละเอียด</span>
+                <span class="hide-detail">ซ่อนรายละเอียด</span>
+              </summary>
+              <div class="pet-details-body">
+                <section>
+                  <h4>📝 รายละเอียด</h4>
+                  <p>
+                    ไซบีเรียน ฮัสกี้มีต้นกำเนิดจากไซบีเรีย ทนทานต่ออากาศหนาว
+                    มีพลังงานสูงและต้องการการออกกำลังกายมาก
+                  </p>
+                </section>
+                <section>
+                  <h4>🏥 การดูแล</h4>
+                  <p>ออกกำลังกายสูงมาก และหวีขนบ่อย</p>
+                </section>
+              </div>
+            </details>
+            <!-- <p>สุนัขพลังงานสูง เป็นมิตร และต้องออกกำลังกายมาก</p>
+                    <p><a href="dog.html">ดูข้อมูลสุนัขเพิ่มเติม</a></p> -->
+          </div>
+        </article>
 
-            <article class="pet-card show-cat">
-                <img src="https://i.pinimg.com/1200x/cc/4b/df/cc4bdf53daeda08b84c4ab098f3c221b.jpg" alt="แมวสยาม">
+        <article class="pet-card show-cat">
+          <img
+            src="https://i.pinimg.com/1200x/cc/4b/df/cc4bdf53daeda08b84c4ab098f3c221b.jpg"
+            alt="แมวสยาม"
+          />
 
-                <div class="pet-content">
-                    <h2>แมวสยาม</h2>
-                    <p class="breed">Siamese Cat</p>
+          <div class="pet-content">
+            <h2>แมวสยาม</h2>
+            <p class="breed">Siamese Cat</p>
+            <ul class="pet-info">
+              <li class="info-lifespan">
+                <i class="fa-regular fa-clock"></i>
+                อายุขัย: 12–20 ปี
+              </li>
+              <li class="info-size">
+                <i class="fa-solid fa-ruler"></i>
+                ขนาด: เล็ก–กลาง (2.5–5.5 กก.)
+              </li>
+              <li class="info-temperament">
+                <i class="fa-regular fa-heart"></i>
+                นิสัย: เปิดเผย ช่างพูด และผูกพันกับเจ้าของ
+              </li>
+            </ul>
+            <details class="pet-details">
+              <summary class="pet-btn">
+                <i class="fa-solid fa-circle-info"></i>
+                <span class="show-detail">ดูรายละเอียด</span>
+                <span class="hide-detail">ซ่อนรายละเอียด</span>
+              </summary>
+              <div class="pet-details-body">
+                <section>
+                  <h4>📝 รายละเอียด</h4>
+                  <p>
+                    แมวสยามเป็นแมวพันธุ์ไทย มีสีขาวครีมและจุดสีเข้มที่ใบหน้า หู
+                    ขา และหาง ชอบพูดคุยและเข้ากับคนได้ง่าย
+                  </p>
+                </section>
+                <section>
+                  <h4>🏥 การดูแล</h4>
+                  <p>ดูแลง่าย และหวีขนสัปดาห์ละครั้ง</p>
+                </section>
+              </div>
+            </details>
+            <!--                     
                     <p>แมวพันธุ์ไทยที่ช่างพูดและผูกพันกับเจ้าของ</p>
-                    <p><a href="cat.html">ดูข้อมูลแมวเพิ่มเติม</a></p>
-                </div>
-            </article>
+                    <p><a href="cat.html">ดูข้อมูลแมวเพิ่มเติม</a></p> -->
+          </div>
+        </article>
 
-            <article class="pet-card show-cat">
-                <img src="https://i.pinimg.com/736x/42/bf/dd/42bfddd3b14d103c4a5ca5618ec0b27f.jpg" alt="แมวเปอร์เซีย">
+        <article class="pet-card show-cat">
+          <img
+            src="https://i.pinimg.com/736x/42/bf/dd/42bfddd3b14d103c4a5ca5618ec0b27f.jpg"
+            alt="แมวเปอร์เซีย"
+          />
 
-                <div class="pet-content">
-                    <h2>แมวเปอร์เซีย</h2>
-                    <p class="breed">Persian Cat</p>
-                    <p>แมวขนยาวที่มีนิสัยสงบและอ่อนโยน</p>
-                    <p><a href="cat.html">ดูข้อมูลแมวเพิ่มเติม</a></p>
-                </div>
-            </article>
+          <div class="pet-content">
+            <h2>แมวเปอร์เซีย</h2>
+            <p class="breed">Persian Cat</p>
+            <ul class="pet-info">
+              <li class="info-lifespan">
+                <i class="fa-regular fa-clock"></i>
+                อายุขัย: 12–17 ปี
+              </li>
+              <li class="info-size">
+                <i class="fa-solid fa-ruler"></i>
+                ขนาด: กลาง (3–6 กก.)
+              </li>
+              <li class="info-temperament">
+                <i class="fa-regular fa-heart"></i>
+                นิสัย: สงบ นิ่ง และอ่อนโยน
+              </li>
+            </ul>
+            <details class="pet-details">
+              <summary class="pet-btn">
+                <i class="fa-solid fa-circle-info"></i>
+                <span class="show-detail">ดูรายละเอียด</span>
+                <span class="hide-detail">ซ่อนรายละเอียด</span>
+              </summary>
 
-            <article class="pet-card show-bird">
-                <img src="https://i.pinimg.com/736x/f9/07/ec/f907ecfecd201d05cbed73ead395afbb.jpg" alt="นกแก้วแมคคอว์">
+              <div class="pet-details-body">
+                <section>
+                  <h4>📝 รายละเอียด</h4>
+                  <p>
+                    แมวเปอร์เซียมีขนยาวและหนานุ่ม ใบหน้าแบนและตาโต
+                    นิสัยสงบและชอบอยู่ในบ้าน ต้องดูแลขนเป็นพิเศษ
+                  </p>
+                </section>
+                <section>
+                  <h4>🏥 การดูแล</h4>
+                  <p>หวีขนทุกวัน และดูแลดวงตาเป็นพิเศษ</p>
+                </section>
+              </div>
+            </details>
+            <!-- <p>แมวขนยาวที่มีนิสัยสงบและอ่อนโยน</p>
+                    <p><a href="cat.html">ดูข้อมูลแมวเพิ่มเติม</a></p> -->
+          </div>
+        </article>
 
-                <div class="pet-content">
-                    <h2>นกแก้วแมคคอว์</h2>
-                    <p class="breed">Macaw Parrot</p>
-                    <p>นกสีสันสวยงาม ฉลาด และชอบเข้าสังคม</p>
-                    <p><a href="bird.html">ดูข้อมูลนกเพิ่มเติม</a></p>
-                </div>
-            </article>
+        <article class="pet-card show-bird">
+          <img
+            src="https://i.pinimg.com/736x/f9/07/ec/f907ecfecd201d05cbed73ead395afbb.jpg"
+            alt="นกแก้วแมคคอว์"
+          />
 
-            <article class="pet-card show-fish">
-                <img src="https://i.pinimg.com/736x/ee/09/4f/ee094ff4e170550e4f892e3a0fd78db3.jpg" alt="ปลาทอง">
+          <div class="pet-content">
+            <h2>นกแก้วแมคคอว์</h2>
+            <p class="breed">Macaw Parrot</p>
 
-                <div class="pet-content">
-                    <h2>ปลาทอง</h2>
-                    <p class="breed">Goldfish</p>
-                    <p>สัตว์เลี้ยงที่สงบและเหมาะกับผู้เริ่มต้น</p>
-                    <p><a href="fish.html">ดูข้อมูลปลาเพิ่มเติม</a></p>
-                </div>
-            </article>
+            <ul class="pet-info">
+              <li class="info-lifespan">
+                <i class="fa-regular fa-clock"></i> อายุขัย: 50–80 ปี
+              </li>
+              <li class="info-size">
+                <i class="fa-solid fa-ruler"></i>ขนาด: ใหญ่ (900–1,500 กรัม)
+              </li>
+              <li class="info-temperament">
+                <i class="fa-regular fa-heart"></i> นิสัย: ฉลาด เปิดเผย
+                และชอบเข้าสังคม
+              </li>
+            </ul>
 
-            <article class="pet-card show-small-pet">
-                <img src="https://i.pinimg.com/1200x/b2/a4/6e/b2a46ef9c95aa740d17433a67edd6491.jpg" alt="กระต่าย">
+            <details class="pet-details">
+              <summary class="pet-btn">
+                <i class="fa-solid fa-circle-info"></i>
+                <span class="show-detail">ดูรายละเอียด</span>
+                <span class="hide-detail">ซ่อนรายละเอียด</span>
+              </summary>
 
-                <div class="pet-content">
-                    <h2>กระต่าย</h2>
-                    <p class="breed">Rabbit</p>
-                    <p>สัตว์เลี้ยงที่อ่อนโยน ขี้อาย และเป็นมิตร</p>
-                    <p><a href="small-pets.html">ดูสัตว์ขนาดเล็กเพิ่มเติม</a></p>
-                </div>
-            </article>
+              <div class="pet-details-body">
+                <section>
+                  <h4>📝 รายละเอียด</h4>
+                  <p>
+                    นกแก้วแมคคอว์เป็นนกขนาดใหญ่ที่มีสีสันสวยงาม
+                    สามารถเลียนเสียงคนพูดได้ มีอายุยืนและต้องการความใส่ใจมาก
+                  </p>
+                </section>
+                <section>
+                  <h4>🏥 การดูแล</h4>
+                  <p>ต้องการกรงขนาดใหญ่และปฏิสัมพันธ์ทุกวัน</p>
+                </section>
+              </div>
+            </details>
 
-            <article class="pet-card show-small-pet">
-                <img src="https://i.pinimg.com/736x/a0/43/94/a04394c647af7860799f3e99869bceec.jpg" alt="หนูแฮมสเตอร์">
+            <!-- <p>นกสีสันสวยงาม ฉลาด และชอบเข้าสังคม</p>
+                    <p><a href="bird.html">ดูข้อมูลนกเพิ่มเติม</a></p> -->
+          </div>
+        </article>
 
-                <div class="pet-content">
-                    <h2>หนูแฮมสเตอร์</h2>
-                    <p class="breed">Hamster</p>
-                    <p>สัตว์เลี้ยงขนาดเล็ก ขี้เล่น และเหมาะกับพื้นที่จำกัด</p>
-                    <p><a href="small-pets.html">ดูสัตว์ขนาดเล็กเพิ่มเติม</a></p>
-                </div>
-            </article>
+        <article class="pet-card show-fish">
+          <img
+            src="https://i.pinimg.com/736x/ee/09/4f/ee094ff4e170550e4f892e3a0fd78db3.jpg"
+            alt="ปลาทอง"
+          />
+
+          <div class="pet-content">
+            <h2>ปลาทอง</h2>
+            <p class="breed">Goldfish</p>
+
+            <ul class="pet-info">
+              <li class="info-lifespan">
+                <i class="fa-regular fa-clock"></i>
+                อายุขัย: 10–20 ปี
+              </li>
+              <li class="info-size">
+                <i class="fa-solid fa-ruler"></i>ขนาด: เล็ก–กลาง (5–20 ซม.)
+              </li>
+              <li class="info-temperament">
+                <i class="fa-regular fa-heart"></i>นิสัย: สงบ เป็นมิตร
+              </li>
+            </ul>
+
+            <details class="pet-details">
+              <summary class="pet-btn">
+                <i class="fa-solid fa-circle-info"></i>
+                <span class="show-detail ">ดูรายละเอียด</span
+                ><span class="hide-detail">ซ่อนรายละเอียด</span>
+              </summary>
+              <div class="pet-details-body">
+                <section>
+                  <h4>📝 รายละเอียด</h4>
+                  <p>
+                    ปลาทองเป็นสัตว์เลี้ยงที่ดูแลง่ายและเหมาะสำหรับผู้เริ่มต้น
+                    มีหลายสายพันธุ์และต้องการพื้นที่ว่ายน้ำที่เพียงพอ
+                  </p>
+                </section>
+                <section>
+                  <h4>🏥 การดูแล</h4>
+                  <p>เปลี่ยนน้ำสม่ำเสมอ และให้อาหารวันละ 1–2 ครั้ง</p>
+                </section>
+              </div>
+            </details>
+            <!-- <p>สัตว์เลี้ยงที่สงบและเหมาะกับผู้เริ่มต้น</p>
+                    <p><a href="fish.html">ดูข้อมูลปลาเพิ่มเติม</a></p> -->
+          </div>
+        </article>
+
+        <article class="pet-card show-small-pet">
+          <img
+            src="https://i.pinimg.com/1200x/b2/a4/6e/b2a46ef9c95aa740d17433a67edd6491.jpg"
+            alt="กระต่าย"
+          />
+
+          <div class="pet-content">
+            <h2>กระต่าย</h2>
+            <p class="breed">Rabbit</p>
+
+            <ul class="pet-info">
+              <li class="info-lifespan">
+                <i class="fa-regular fa-clock"></i> อายุขัย: 8–12 ปี
+              </li>
+              <li class="info-size">
+                <i class="fa-solid fa-ruler"></i>ขนาด: เล็ก–กลาง (1–3 กก.)
+              </li>
+              <li class="info-temperament">
+                <i class="fa-regular fa-heart"></i> นิสัย: อ่อนโยน ขี้อาย
+                และเป็นมิตร
+              </li>
+            </ul>
+
+            <details class="pet-details">
+              <summary class="pet-btn">
+                <i class="fa-solid fa-circle-info"></i>
+                <span class="show-detail ">ดูรายละเอียด</span
+                ><span class="hide-detail">ซ่อนรายละเอียด</span>
+              </summary>
+              <div class="pet-details-body">
+                <section>
+                  <h4>📝 รายละเอียด</h4>
+                  <p>
+                    กระต่ายเป็นสัตว์เลี้ยงที่น่ารักและเหมาะกับครอบครัว
+                    ชอบกินหญ้าและผัก และต้องการพื้นที่สำหรับวิ่งเล่น
+                  </p>
+                </section>
+                <section>
+                  <h4>🏥 การดูแล</h4>
+                  <p>ดูแลขนบ่อย ให้อาหารประเภทหญ้าและผัก</p>
+                </section>
+              </div>
+            </details>
+            <!-- <p>สัตว์เลี้ยงที่อ่อนโยน ขี้อาย และเป็นมิตร</p>
+                    <p><a href="small-pets.html">ดูสัตว์ขนาดเล็กเพิ่มเติม</a></p> -->
+          </div>
+        </article>
+
+        <article class="pet-card show-small-pet">
+          <img
+            src="https://i.pinimg.com/736x/a0/43/94/a04394c647af7860799f3e99869bceec.jpg"
+            alt="หนูแฮมสเตอร์"
+          />
+
+          <div class="pet-content">
+            <h2>หนูแฮมสเตอร์</h2>
+            <p class="breed">Hamster</p>
+
+            <ul class="pet-info">
+              <li class="info-lifespan">
+                <i class="fa-regular fa-clock"></i> อายุขัย: 2–3 ปี
+              </li>
+              <li class="info-size">
+                <i class="fa-solid fa-ruler"></i>ขนาด: เล็กมาก (20–200 กรัม)
+              </li>
+              <li class="info-temperament">
+                <i class="fa-regular fa-heart"></i> นิสัย: กระตือรือร้น ขี้เล่น
+                และตื่นกลางคืน
+              </li>
+            </ul>
+
+            <details class="pet-details">
+              <summary class="pet-btn">
+                <i class="fa-solid fa-circle-info"></i>
+                <span class="show-detail">ดูรายละเอียด</span
+                ><span class="hide-detail">ซ่อนรายละเอียด</span>
+              </summary>
+              <div class="pet-details-body">
+                <section>
+                  <h4>📝 รายละเอียด</h4>
+                  <p>
+                    แฮมสเตอร์เหมาะสำหรับผู้ที่มีพื้นที่จำกัด
+                    กระตือรือร้นในเวลากลางคืนและมีพฤติกรรมชอบเก็บอาหาร
+                  </p>
+                </section>
+                <section>
+                  <h4>🏥 การดูแล</h4>
+                  <p>ทำความสะอาดกรงสัปดาห์ละครั้งและจัดเตรียมวงล้อวิ่ง</p>
+                </section>
+              </div>
+            </details>
+            <!-- <p>สัตว์เลี้ยงขนาดเล็ก ขี้เล่น และเหมาะกับพื้นที่จำกัด</p>
+                    <p><a href="small-pets.html">ดูสัตว์ขนาดเล็กเพิ่มเติม</a></p> -->
+          </div>
+        </article>
+      </div>
+
+      <tipbox>
+        <div class="tip-box">
+          <div class="tip-card">
+            <h2 class="tip-b">
+              <i class="fa-solid fa-wand-sparkles"></i>
+              คำแนะนำในการเลือกสัตว์เลี้ยง
+              <i class="fa-solid fa-hat-wizard"></i>
+            </h2>
+
+            <span class="tip-tager">
+              <div class="tip-box-tag color-box-x">
+                <h4 class="tag">พิจารณาไลฟ์สไต์ของคุณ</h4>
+                หากคุณมีเวลาจำกัดสัตว์เลี้ยงอย่างปลาหรือแมวอาจจะเหมาะกับคุณมากกว่าสุนัขที่ต้องการความใส่ใจมาก
+              </div>
+              <div class="tip-box-tag color-box-y">
+                <h4 class="tag">พื้นที่อยู่อาศัย</h4>
+                ห้องเล็กหรือคอนโดอาจจะไม่เหมาะกัยสุนัขพันธ์ุใหญ่
+                แต่เหมาะกับแมวกระต่ายหรือหนูแฮมสเตอร์
+              </div>
+              <div class="tip-box-tag color-box-z">
+                <h4 class="tag">งบประมาณ</h4>
+                นอกจากค่าอาหาร แล้วยังต้องคิดถึงค่ารักษาพยาบาล ค่าอุปกรณ์
+                และค่าใช้จ่ายอื่นๆ
+              </div>
+              <div class="tip-box-tag color-box-o">
+                <h4 class="tag">อายุขัยของสัตว์</h4>
+                นกแก้วสามารถมีชีวิตได้ถึง 80 ปี ในขณะที่หนูแฮมสเตอร์มีอายุเพียง
+                2-3 ปี จึงควรพิจารณาภาวะผูกพันระยะยาว
+              </div>
+              
+            </span>
+            <div class="table-responsive">
+              <table class="pet-table">
+                <caption>
+                  ตารางเปรียบเทียบสัตว์เลี้ยงแต่ละประเภท
+                </caption>
+            
+                <thead>
+                  <tr>
+                    <th scope="col">ประเภทสัตว์เลี้ยง</th>
+                    <th scope="col">เหมาะสำหรับ</th>
+                    <th scope="col">พื้นที่ที่ต้องการ</th>
+                    <th scope="col">การดูแล</th>
+                    <th scope="col">ค่าใช้จ่าย</th>
+                  </tr>
+                </thead>
+            
+                <!-- scope="col" ช่วยด้าน Accessibility ทำให้โปรแกรมอ่านหน้าจอเข้าใจอย่างชัดเจนว่าเซลล์นี้เป็นหัวข้อของคอลัมน์ใด -->
+            
+            
+                <tbody>
+                  <tr>
+                    <th scope="row">🐕 สุนัข</th>
+                    <td>ผู้ที่มีเวลาและชอบทำกิจกรรม
+                      https://example.com/animals/dog/verylongaddresswithoutspaces
+                    </td>
+                    <td>ปานกลางถึงมาก</td>
+                    <td>ต้องพาออกกำลังกายและดูแลเป็นประจำ</td>
+                    <td>ปานกลางถึงสูง</td>
+                  </tr>
+            
+                  <tr>
+                    <th scope="row">🐱 แมว</th>
+                    <td>ผู้ที่ต้องการสัตว์เลี้ยงค่อนข้างอิสระ</td>
+                    <td>น้อยถึงปานกลาง</td>
+                    <td>ดูแลกระบะทราย อาหาร และสุขภาพ</td>
+                    <td>ปานกลาง</td>
+                  </tr>
+            
+                  <tr>
+                    <th scope="row">🦜 นก</th>
+                    <td>ผู้ที่ชอบสัตว์ร่าเริงและมีเสียง</td>
+                    <td>น้อย</td>
+                    <td>ทำความสะอาดกรงและให้เวลาเข้าสังคม</td>
+                    <td>ต่ำถึงปานกลาง</td>
+                  </tr>
+            
+                  <tr>
+                    <th scope="row">🐟 ปลา</th>
+                    <td>ผู้ที่มีเวลาจำกัดและชอบความสงบ</td>
+                    <td>น้อยถึงปานกลาง</td>
+                    <td>ควบคุมคุณภาพน้ำและทำความสะอาดตู้</td>
+                    <td>ต่ำถึงปานกลาง</td>
+                  </tr>
+            
+                  <tr>
+                    <th scope="row">🐰 สัตว์ขนาดเล็ก</th>
+                    <td>ผู้ที่มีพื้นที่จำกัด</td>
+                    <td>น้อย</td>
+                    <td>ทำความสะอาดกรงและให้อาหารที่เหมาะสม</td>
+                    <td>ต่ำถึงปานกลาง</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+            <p class="guide-note">
+              ⚠️ ก่อนเลือกสัตว์เลี้ยง ควรพิจารณาเวลา พื้นที่
+              ค่าใช้จ่าย และความพร้อมในการดูแลระยะยาว
+            </p>
+          </div>
+          
         </div>
 
-            <tipbox>
-            
-                <div class="tip-box">
-                    <div class="tip-card">
-                        <h2 class="tip-b"><i class="fa-solid fa-wand-sparkles"></i> คำแนะนำในการเลือกสัตว์เลี้ยง <i
-                                class="fa-solid fa-hat-wizard"></i>
-                        </h2>
-            
-                        <span class="tip-tager">
-                            <div class=" tip-box-tag color-box-x">
-            
-                                <h4 class="tag">พิจารณาไลฟ์สไต์ของคุณ</h4>
-                                หากคุณมีเวลาจำกัดสัตว์เลี้ยงอย่างปลาหรือแมวอาจจะเหมาะกับคุณมากกว่าสุนัขที่ต้องการความใส่ใจมาก
-            
-                            </div>
-                            <div class="tip-box-tag color-box-y">
-                                <h4 class="tag">พื้นที่อยู่อาศัย</h4>
-                                ห้องเล็กหรือคอนโดอาจจะไม่เหมาะกัยสุนัขพันธ์ุใหญ่ แต่เหมาะกับแมวกระต่ายหรือหนูแฮมสเตอร์
-                            </div>
-                            <div class="tip-box-tag color-box-z">
-                                <h4 class="tag">งบประมาณ</h4>
-                                นอกจากค่าอาหาร แล้วยังต้องคิดถึงค่ารักษาพยาบาล ค่าอุปกรณ์ และค่าใช้จ่ายอื่นๆ
-                            </div>
-                            <div class="tip-box-tag color-box-o">
-            
-                                <h4 class="tag">อายุขัยของสัตว์</h4>
-                                นกแก้วสามารถมีชีวิตได้ถึง 80 ปี ในขณะที่หนูแฮมสเตอร์มีอายุเพียง 2-3 ปี
-                                จึงควรพิจารณาภาวะผูกพันระยะยาว
-            
-                            </div>
-                        </span>
-                    </div>
-                </div>
-            </tipbox>
+      </tipbox>
 
-        <!-- เรียนรู้การสร้าง radio button -->
-        <section class="form-radio">
+      <!-- เรียนรู้การสร้าง radio button -->
+      <section class="form-radio">
+        <h2>ทดลองเลือกประเภทสัตว์ที่คุณสนใจ</h2>
+        <p>คลิกข้อความหรือปุ่มวงกลม เพื่อเลือกประเภทสัตว์ที่สนใจ</p>
 
-            <h2>ทดลองเลือกประเภทสัตว์ที่คุณสนใจ</h2>
-            <p>คลิกข้อความหรือปุ่มวงกลม เพื่อเลือกประเภทสัตว์ที่สนใจ</p>
+        <form action=" " method=" ">
+          <fieldset>
+            <legend>เลือกประเภทสัตว์เลี้ยง</legend>
 
+            <div class="radio-option">
+              <div class="radio-item">
+                <input type="radio" id="fev-dog" name="fev-pet" value="สุนัข" />
+                <label for="fev-dog">สุนัข</label>
+              </div>
+              <div class="radio-item">
+                <input type="radio" id="fev-cat" name="fev-pet" value="แมว" />
+                <label for="fev-cat">แมว</label>
+              </div>
+              <div class="radio-item">
+                <input type="radio" id="fev-bird" name="fev-pet" value="Nok" />
+                <label for="fev-bird">นก</label>
+              </div>
 
-            <form action=" " method=" ">
-                <fieldset>
-                    <legend>เลือกประเภทสัตว์เลี้ยง</legend>
+              <div class="radio-item">
+                <input type="radio" id="fev-fish" name="fev-pet" value="ปลา" />
+                <label for="fev-fish">ปลา</label>
+              </div>
+              <div class="radio-item">
+                <input
+                  type="radio"
+                  id="fev-smallpet"
+                  name="fev-pet"
+                  value="สัตว์ขนาดเล็ก"
+                />
+                <label for="fev-smallpet">สัตว์ขนาดเล็ก</label>
+              </div>
+            </div>
 
-                    <div class="radio-option">
-                        <div class="radio-item">
-                            <input type="radio" id="fev-dog" name="fev-pet" value="สุนัข">
-                            <label for="fev-dog">สุนัข</label>
-                        </div>
-                        <div class="radio-item">
-                            <input type="radio" id="fev-cat" name="fev-pet" value="แมว">
-                            <label for="fev-cat">แมว</label>
-                        </div>
-                        <div class="radio-item">
-                            <input type="radio" id="fev-bird" name="fev-pet" value="Nok">
-                            <label for="fev-bird">นก</label>
-                        </div>
-                        
-                        <div class="radio-item">
-                            <input type="radio" id="fev-fish" name="fev-pet" value="ปลา">
-                            <label for="fev-fish">ปลา</label>
-                        </div>
-                        <div class="radio-item">
-                            <input type="radio" id="fev-smallpet" name="fev-pet" value="สัตว์ขนาดเล็ก">
-                            <label for="fev-smallpet">สัตว์ขนาดเล็ก</label>
-                        </div>
-
-                    </div>
-
-                    <button type="reset" class="reset-btn">ล้างตัวเลือก</button>
-
-                </fieldset>
-
-
-
-            </form>
-
-        </section>
-
-
-
+            <button type="reset" class="reset-btn">ล้างตัวเลือก</button>
+          </fieldset>
+        </form>
+      </section>
     </main>
 
-
-
-
-
-
-
-
-
     <footer>
-        <p>&copy; 2026 คู่มือสัตว์เลี้ยง </p>
+      <p>&copy; 2026 คู่มือสัตว์เลี้ยง</p>
     </footer>
-
-</body>
-
+  </body>
 </html>
