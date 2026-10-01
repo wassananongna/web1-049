@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap demo</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><i class="fa-solid fa-paw"></i> คู่มือสัตว์เลี้ยง</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">ทั้งหมด</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">สุนัข</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">แมว</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">นก</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ปลา</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">สัตว์ขนาดเล็ก</a>
+            </li>
+            </li>
+          </ul>
+          <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form> -->
+                <!-- ปุ่ม Dark/light Mode -->
+                
+                <button id="themeToggle" class="btn btn-secondary">
+                  🌙 Dark
+                </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- Carousal-->
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+        aria-label="Slide 3"></button>
+    </div>
+
+    <!-- รูป -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://i.pinimg.com/1200x/46/25/5d/46255de5e0b6f5fb4b4ea86f21258a37.jpg" class="d-block w-100"
+          alt="สุนัขโกลเด้น รีทรีฟเวอร์">
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.pinimg.com/1200x/cc/4b/df/cc4bdf53daeda08b84c4ab098f3c221b.jpg" class="d-block w-100"
+          alt="แมวสยาม">
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.pinimg.com/736x/f9/07/ec/f907ecfecd201d05cbed73ead395afbb.jpg" class="d-block w-100"
+          alt="นกแก้วสีสันสวยงาม">
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.pinimg.com/1200x/b2/a4/6e/b2a46ef9c95aa740d17433a67edd6491.jpg" class="d-block w-100"
+          alt="กระต่ายสีขาว">
+      </div>
+
+    </div>
+
+    <!-- ปุุ่มเลื่อนหน้าหลัง -->
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <main class="main">
+    <div class="container">
+
+      <!-- ปุทเลือกหมวดหมู่สัตว์ -->
+       <div class="category-fiter" id="categoryFilter">
+        <!-- javascipt จะ rander เนื้อหาตรงนี้ -->
+
+       </div>
+
+
+      <!-- การ์ดภาพสัตว์ -->
+        <div class="pet-grid" id="petGrid">
+          <!-- javascipt จะ rander เนื้อหาตรงนี้ -->
+        
+        </div>
+
+
+
+    </div>
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <tipbox>
+    
+      <div class="tip-box">
+        <div class="tip-card">
+          <h2 class="tip-b"><i class="fa-solid fa-wand-sparkles"></i> คำแนะนำในการเลือกสัตว์เลี้ยง <i
+              class="fa-solid fa-hat-wizard"></i>
+          </h2>
+    
+          <span class="tip-tager ">
+            <div class=" card card-body bg-body-tertiary info-primary ">
+    
+              <h4 class="card-title text-primary">พิจารณาไลฟ์สไต์ของคุณ</h4>
+              หากคุณมีเวลาจำกัดสัตว์เลี้ยงอย่างปลาหรือแมวอาจจะเหมาะกับคุณมากกว่าสุนัขที่ต้องการความใส่ใจมาก
+    
+            </div>
+            <div class="card card-body bg-body-tertiary info-success">
+              <h4 class=" card-title text-success">พื้นที่อยู่อาศัย</h4>
+              ห้องเล็กหรือคอนโดอาจจะไม่เหมาะกัยสุนัขพันธ์ุใหญ่ แต่เหมาะกับแมวกระต่ายหรือหนูแฮมสเตอร์
+            </div>
+            <div class="card card-body bg-body-tertiary info-warning ">
+              <h4 class="card-title text-warning ">งบประมาณ</h4>
+              นอกจากค่าอาหาร แล้วยังต้องคิดถึงค่ารักษาพยาบาล ค่าอุปกรณ์ และค่าใช้จ่ายอื่นๆ
+            </div>
+            <div class="card card-body bg-body-tertiary info-danger ">
+    
+              <h4 class="card-title text-danger">อายุขัยของสัตว์</h4>
+              นกแก้วสามารถมีชีวิตได้ถึง 80 ปี ในขณะที่หนูแฮมสเตอร์มีอายุเพียง 2-3 ปี
+              จึงควรพิจารณาภาวะผูกพันระยะยาว
+    
+            </div>
+          </span>
+        </div>
+      </div>
+    </tipbox>
+
+
+
+
+  <footer class="footer mt-auto py-3 bg-body-tertiary">
+    <div class="container-fluid text-center">
+      <span class="text-body-secondary"> &copy; 2026 คู่มือสัตว์เลี้ยง </span>
+    </div>
+  </footer>
+
+<script src="../js/scipt.js"></script>
+
+      <script>
+        const button = document.getElementById("themeToggle");
+
+        button.addEventListener("click", () => {
+
+          const html = document.documentElement;
+
+          if (html.getAttribute("data-bs-theme") === "dark") {
+            html.setAttribute("data-bs-theme", "light");
+            button.textContent = "🌙 Dark";
+          } else {
+            html.setAttribute("data-bs-theme", "dark");
+            button.textContent = "☀️ Light";
+          }
+
+        });
+      </script>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="../css/custom.css">
+</body>
+
+</html>
