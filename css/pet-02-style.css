@@ -1,177 +1,130 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-  scroll-behavior: smooth;
-  /* font-size: 16px; */
-}
-
-body {
-  line-height: 0.9;
-  color: var(--text-color);
-  background: linear-gradient(135deg, #fae9ec, #f0d4d9, #89b8f1);
-
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+    scroll-behavior: smooth;
 }
 
 :root {
-  /* สีของเว็บ */
-  --primary-color: #65b6f8;
-  --primary-dark-color: #022d50;
-  --secondary-color: #c8b0f5;
-  --secodery-dark-clor: #29036e;
+    --primary-color: #65b6f8;
+    --primary-dark-color: #022d50;
+    --secondary-color: #c8b0f5;
+    --secondary-dark-color: #29036e;
 
-  /* เงา */
-  --header-shadow: 0 4px 8px #cccccc;
-  --card-shadow: 0 3px 10px rgb(196, 196, 219);
+    --header-shadow: 0 4px 8px #cccccc;
+    --card-shadow: 0 3px 10px rgb(196, 196, 219);
 
-  /* สีขอบ */
-  --border-color: #97a8c2;
+    --border-color: #97a8c2;
 
-  /* สีข้อความ */
-  --text-color: navy;
+    --text-color: navy;
+    --red-text-color: tomato;
+    --green-text-color: #0ba067;
+    --blue-text-color: #33728f;
 
-  --red-text-color:tomato ;
-    --green-text-color:#0ba067 ;
+    --nav-text-color: #636377;
+    --light-text-color: #ffffff;
 
-      --blue-text-color:#33728f ;
-
-
-  --nav-text-color: #636377;
-
-  --light-text-clor: #ffffff;
-
-  /* สีพื้น */
-  --btn-bg-color: #a6a6f7;
-
-  --footer-bg-color: black;
-  --mute-bg-color: #d7eafcd5;
+    --btn-bg-color: #a6a6f7;
+    --footer-bg-color: black;
+    --mute-bg-color: #d7eafc;
 }
 
-.pet-details summary {
-  list-style: none;
-}
-
-.pet-btn {
-  background-color: var(--btn-bg-color);
-  padding: 0.5rem;
-
-  text-align: center;
-  color: var(--light-text-clor);
-  border-radius: 0.5rem;
-  box-shadow: var(--card-shadow);
-
-  cursor: pointer;
-
-  transition: transform 0.5s;
-}
-
-.pet-btn:hover {
-  transform: translateY(-3px);
-  background-color: var(--primary-dark-color);
-}
-
-
-
-.hide-detail {
-  display: none;
-
-}
-
-.pet-details[open] .hide-detail {
-  display: inline;
-
-}
-.pet-details[open] .show-detail {
-  display: none;
-
-}
-
-.pet-details-body {
-  margin-top: 1rem;
-  animation: appear 0.5s ease-out ;
-}
-@keyframes appear {
-  from {opacity: 0; transform: translateY(-20px);}
-  to {opacity: 1; transform: translateY(0);}
-}
-
-.pet-details-body section+section {
-  margin-top: 1rem;
-}
-.pet-details-body p,h4 {
-  gap: 1rem;
-  margin: 1rem;
-
-}
-
-
-/* ======================
-        Header
+/* =========================
+   BODY
 ========================= */
-.header {
-  position: sticky;
-  top: 0;
-  backdrop-filter: blur(10px);
 
-  background-color: #022d50a4;
-  text-align: center;
-  align-items: center;
-  box-shadow: var(--header-shadow);
+body {
+    line-height: 1.5;
+    color: var(--text-color);
+    background: linear-gradient(135deg, #fae9ec, #f0d4d9, #89b8f1);
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    backdrop-filter: blur(10px);
+    background-color: #022d50a4;
+
+    text-align: center;
+    box-shadow: var(--header-shadow);
 }
 
 .header-content {
-  text-align: center;
-  padding-block: 1.5rem;
+    padding: 1.5rem;
 }
 
 .header-title {
-  color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .header-subtitle {
-  color: var(--border-color);
-  margin-top: 0.8rem;
+    color: var(--border-color);
+    margin-top: 0.8rem;
 }
 
-/* ======================
-       nav
+/* =========================
+   NAVBAR - FLEX
 ========================= */
 
 .category-nav {
-  padding-block: 2.5rem;
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+    flex-wrap: wrap;
+
+    padding: 1rem;
 }
 
 .category-nav label {
-  color: var(--nav-text-color);
-  padding: 0.7rem 1.7rem;
-  box-shadow: var(--card-shadow);
-  border-radius: 999px;
-  margin-right: 0.3rem;
-  background-color: var(--light-text-clor);
-  transition: transform 0.5s;
-  display: inline-block;
+    display: inline-block;
+
+    color: var(--nav-text-color);
+    background-color: var(--light-text-color);
+
+    padding: 0.7rem 1.7rem;
+
+    border-radius: 999px;
+    box-shadow: var(--card-shadow);
+
+    cursor: pointer;
+
+    transition: 0.3s;
 }
 
-nav a:hover {
-  transform: translateY(-10px);
+.category-nav label:hover {
+    transform: translateY(-3px);
 }
 
-/* hide filter */
+/* =========================
+   FILTER RADIO
+========================= */
+
 .filter-radio {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip-path: inset(50%);
+    position: absolute;
+    width: 1px;
+    height: 1px;
+
+    overflow: hidden;
+    clip-path: inset(50%);
 }
-/* show filter*/
+
+/* Active navbar */
 
 #filter-all:checked ~ .category-nav label[for="filter-all"],
 #filter-dog:checked ~ .category-nav label[for="filter-dog"],
@@ -179,390 +132,576 @@ nav a:hover {
 #filter-bird:checked ~ .category-nav label[for="filter-bird"],
 #filter-fish:checked ~ .category-nav label[for="filter-fish"],
 #filter-small-pet:checked ~ .category-nav label[for="filter-small-pet"] {
-  background-color: var(--btn-bg-color);
-  color: var(--light-text-clor);
+    background-color: var(--btn-bg-color);
+    color: var(--light-text-color);
 }
 
-/* hide title */
+/* =========================
+   FILTER TITLE
+========================= */
+
 .category-hide {
-  display: none;
+    display: none;
 }
-/* show title */
+
 #filter-all:checked ~ main .show-all,
 #filter-dog:checked ~ main .show-dog,
 #filter-cat:checked ~ main .show-cat,
 #filter-bird:checked ~ main .show-bird,
 #filter-fish:checked ~ main .show-fish,
 #filter-small-pet:checked ~ main .show-small-pet {
-  display: inline;
+    display: inline;
 }
 
-/* hide card-pet */
+/* =========================
+   FILTER CARD
+========================= */
 
 #filter-dog:checked ~ main .pet-card,
 #filter-cat:checked ~ main .pet-card,
 #filter-bird:checked ~ main .pet-card,
 #filter-fish:checked ~ main .pet-card,
 #filter-small-pet:checked ~ main .pet-card {
-  display: none;
+    display: none;
 }
-
-/* show card-pet */
 
 #filter-dog:checked ~ main .show-dog,
 #filter-cat:checked ~ main .show-cat,
 #filter-bird:checked ~ main .show-bird,
 #filter-fish:checked ~ main .show-fish,
 #filter-small-pet:checked ~ main .show-small-pet {
-  display: block;
+    display: block;
 }
 
-nav a.active {
-  background-color: var(--btn-bg-color);
-  color: var(--light-text-clor);
-}
-
-
-
-
-
-/* ======================
-       main
+/* =========================
+   MAIN
 ========================= */
+
 .container {
-  max-width: 1320px;
-  margin: auto;
+    width: calc(100% - 2rem);
+    max-width: 1320px;
+
+    margin: 2rem auto;
 }
 
 .pet-title {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  color: var(--primary-dark-color);
+    text-align: center;
+
+    margin-bottom: 1.5rem;
+
+    color: var(--primary-dark-color);
 }
 
+/* =========================
+   PET GRID - GRID
+========================= */
+
 .pet-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.5rem;
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 20px;
 }
 
 .pet-card {
-  border: var(--border-color);
-  box-shadow: var(--card-shadow);
-  border-radius: 0.75rem;
-  overflow: hidden;
-  margin: 1rem;
-  transition: 0.3s;
-}
+    min-width: 0;
 
-.pet-card img {
-  height: 19rem;
-  width: 100%;
-  object-fit: cover;
+    border: 1px solid var(--border-color);
+
+    box-shadow: var(--card-shadow);
+    border-radius: 0.75rem;
+
+    overflow: hidden;
+
+    transition: 0.3s;
 }
 
 .pet-card:hover {
-  transform: translateY(-10px);
+    transform: translateY(-5px);
+}
+
+.pet-card img {
+    display: block;
+
+    width: 100%;
+    height: 19rem;
+
+    object-fit: cover;
 }
 
 .pet-content {
-  padding: 1.3rem;
-  background-color: #faeee9;
+    padding: 1.3rem;
+
+    background-color: #faeee9;
 }
 
 .pet-content h2 {
-  columns: var(--primary-dark-color);
+    color: var(--primary-dark-color);
 }
 
+.pet-info {
+    margin-block: 1rem;
 
+    list-style-type: none;
+}
 
-/* ======================
-       tipbox
+.pet-info li {
+    margin-block: 1rem;
+}
+
+.info-lifespan {
+    color: var(--red-text-color);
+}
+
+.info-size {
+    color: var(--blue-text-color);
+}
+
+.info-temperament {
+    color: var(--green-text-color);
+}
+
+/* =========================
+   DETAILS BUTTON
 ========================= */
-.head-tip {
-  text-align: center;
-  align-items: center;
-  margin: 1rem;
+
+.pet-details summary {
+    list-style: none;
 }
+
+.pet-btn {
+    display: block;
+
+    background-color: var(--btn-bg-color);
+
+    padding: 0.5rem;
+
+    text-align: center;
+
+    color: var(--light-text-color);
+
+    border-radius: 0.5rem;
+
+    box-shadow: var(--card-shadow);
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.pet-btn:hover {
+    transform: translateY(-3px);
+
+    background-color: var(--primary-dark-color);
+}
+
+.hide-detail {
+    display: none;
+}
+
+.pet-details[open] .hide-detail {
+    display: inline;
+}
+
+.pet-details[open] .show-detail {
+    display: none;
+}
+
+.pet-details-body {
+    margin-top: 1rem;
+
+    animation: appear 0.5s ease-out;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pet-details-body section + section {
+    margin-top: 1rem;
+}
+
+.pet-details-body p,
+.pet-details-body h4 {
+    margin: 1rem;
+}
+
+/* =========================
+   TIP BOX - GRID
+========================= */
 
 .tip-box {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%,250px),1fr));
-  gap: 1.5rem;
+    display: grid;
 
+    grid-template-columns: 1fr;
+
+    gap: 1.5rem;
+
+    width: 100%;
 }
 
 .tip-card {
-  background-color: white;
-  box-shadow: 0 4px 12px #6969696a;
+    width: 100%;
+    max-width: 1200px;
 
-  margin: 2.2rem;
-  border-radius: 1rem;
-  padding: 1.6rem;
+    margin: 2rem auto;
 
-  width: 82.5rem;
+    padding: 1.6rem;
 
-  text-align: center;
-  align-items: center;
+    background-color: white;
+
+    border-radius: 1rem;
+
+    box-shadow: 0 4px 12px #6969696a;
+
+    text-align: center;
 }
+
 .tip-b {
-  margin: 1rem;
-  color: var(--primary-dark-color);
+    margin: 1rem;
+
+    color: var(--primary-dark-color);
 }
 
 .tip-tager {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 0.5rem;
 }
 
 .tip-box-tag {
-  padding: 0.7rem;
-  /* font-size: 0.9rem; */
-  line-height: 1.2;
-  overflow-wrap: break-word;
-  box-sizing: border-box;
+    padding: 0.7rem;
 
-  text-align: left;
-  margin: 0.5rem;
-  border-radius: 1rem;
+    line-height: 1.5;
+
+    overflow-wrap: break-word;
+
+    text-align: left;
+
+    margin: 0.5rem;
+
+    border-radius: 1rem;
 }
+
 .tag {
-  margin: 0.5rem;
-  text-align: left;
+    margin: 0.5rem;
+
+    text-align: left;
 }
+
 .color-box-x {
-  background-color: #eed171d0;
+    background-color: #eed171d0;
 }
+
 .color-box-y {
-  background-color: #e08ac8b9;
+    background-color: #e08ac8b9;
 }
+
 .color-box-z {
-  background-color: #fa8a76b9;
+    background-color: #fa8a76b9;
 }
+
 .color-box-o {
-  background-color: #04bcc2b4;
+    background-color: #04bcc2b4;
 }
-/* ======================
-        table
+
+/* =========================
+   TABLE
 ========================= */
-.tip-box,
-.pet-table {
 
+.table-responsive {
+    width: 100%;
 
-  border-collapse: collapse;
-  margin: 1rem;
-
-  table-layout: fixed;
-
+    overflow-x: auto;
 }
-.pet-table td ,
+
+.pet-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    table-layout: fixed;
+
+    margin: 1rem 0;
+}
+
+.pet-table td,
 .pet-table th {
     border: 1px solid #020f22;
+
     padding: 1rem;
-     text-align: left;
-  
+
+    text-align: left;
 
     vertical-align: top;
 
     overflow-wrap: break-word;
- 
 }
-.guide-note,
+
 .pet-table caption {
-  text-align: left;
-  font-weight: bold;
-  color: var(--text-color);
+    text-align: left;
 
-  caption-side: top;
+    font-weight: bold;
 
+    color: var(--text-color);
+
+    caption-side: top;
+
+    margin-bottom: 0.5rem;
 }
 
 .pet-table thead th {
-  width: 200px;
-  background-color: #496fa0;
-   text-align: left;
+    background-color: #496fa0;
 
+    color: white;
 }
+
 .pet-table tbody th {
-  width: 200px;
-  background-color: #b8d5fc;
-  text-align: left;
+    background-color: #b8d5fc;
 
-  white-space: nowrap;
-
+    white-space: nowrap;
 }
-/* .pet-table thead th:nth-child(1){width: 300px;} */
-.pet-table thead th:nth-child(2){width: 400px;}
-.pet-table thead th:nth-child(3){width: 200px;}
-.pet-table thead th:nth-child(4){width: 400px;}
-.pet-table thead th:nth-child(5){width: 200px;}
 
 .pet-table tbody tr:nth-child(even) {
-  background-color: #33728f;
-
+    background-color: #33728f;
 }
+
 .pet-table tbody tr:hover {
-  background-color: #f0d4d9;
+    background-color: #f0d4d9;
 }
 
-.table-responsive {
-  width: 100%;
-  overflow: auto;
+.guide-note {
+    text-align: left;
+
+    font-weight: bold;
+
+    color: var(--text-color);
 }
 
-
-
-/* ======================
-        Footer
-========================= */
-footer {
-  background-color: var(--footer-bg-color);
-  color: var(--light-text-clor);
-  text-align: center;
-
-  padding-block: 2rem;
-  margin-top: auto;
-}
-
-/* ======================
-        เลือกประเภทสัตว์เลี้ยง
+/* =========================
+   RADIO FORM
 ========================= */
 
 .form-radio {
-  background-color: white;
-  box-shadow: 0 4px 12px #6969696a;
-  margin: 2rem;
-  border-radius: 1rem;
-  padding: 1.6rem;
-  width: 82.5rem;
-}
-.form-radio h2 {
-  text-align: center;
-  color: #022d50;
-  margin: 0.5rem;
-}
-.form-radio p {
-  text-align: center;
-  color: #636377;
-  margin: 0.9rem;
-}
-.form-radio fieldset {
-  padding: 1.5rem;
-  border-color: var(--border-color);
-  border-radius: 0.7rem;
-}
-.form-radio legend {
-  padding: 0 0.5rem;
-  color: #022d50;
-  font-weight: bold;
-}
-.form-radio legend {
-  padding: 0 0.5rem;
-  color: #022d50;
-  font-weight: bold;
-}
-.radio-option {
-  display: flex;
-  justify-content: center;
-  gap: 0.8rem;
-  flex-wrap: wrap;
-}
-.radio-item label {
-  background-color: var(--mute-bg-color);
-  padding: 0.5rem 1rem;
-  border-radius: 1rem;
-  color: var(--text-color);
+    width: 100%;
+    max-width: 1200px;
 
-  cursor: pointer;
+    margin: 2rem auto;
+
+    padding: 1.6rem;
+
+    background-color: white;
+
+    box-shadow: 0 4px 12px #6969696a;
+
+    border-radius: 1rem;
 }
+
+.form-radio h2 {
+    text-align: center;
+
+    color: var(--primary-dark-color);
+
+    margin: 0.5rem;
+}
+
+.form-radio p {
+    text-align: center;
+
+    color: var(--nav-text-color);
+
+    margin: 0.9rem;
+}
+
+.form-radio fieldset {
+    padding: 1.5rem;
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 0.7rem;
+}
+
+.form-radio legend {
+    padding: 0 0.5rem;
+
+    color: var(--primary-dark-color);
+
+    font-weight: bold;
+}
+
+.radio-option {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 0.8rem;
+
+    flex-wrap: wrap;
+}
+
+.radio-item label {
+    display: inline-block;
+
+    background-color: var(--mute-bg-color);
+
+    padding: 0.5rem 1rem;
+
+    border-radius: 1rem;
+
+    color: var(--text-color);
+
+    cursor: pointer;
+}
+
 .radio-item input {
-  accent-color: var(--btn-bg-color);
+    accent-color: var(--btn-bg-color);
 }
 
 .radio-item input:checked + label {
-  background-color: var(--secondary-color);
-  color: var(--light-text-clor);
+    background-color: var(--secondary-color);
+
+    color: var(--light-text-color);
 }
+
 .reset-btn {
-  background-color: var(--mute-bg-color);
+    display: block;
 
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  border-radius: 0.5rem;
-  border: none;
-  display: block;
-  margin: 2rem auto 0;
+    background-color: var(--mute-bg-color);
+
+    padding: 0.5rem 1rem;
+
+    margin: 2rem auto 0;
+
+    cursor: pointer;
+
+    border-radius: 0.5rem;
+
+    border: none;
 }
 
-
-.pet-info {
-  margin-block: 1rem;
-  list-style-type: none;
-}
-.pet-info li {
-  margin-block: 1rem;
-}
-
-.info-lifespan {
-  
-  color: var(--red-text-color);
-
-}
-.info-size {
-
-  color: var(--blue-text-color);
-
-}
-.info-temperament { 
-
-  color: var(--green-text-color);
-
-}
-
-
-
-
-
-
-
-
-
-/* ======================
-        Responsive
+/* =========================
+   FOOTER
 ========================= */
 
+footer {
+    margin-top: auto;
 
-@media (max-width:992px) {
-  .pet-grid {
-    /* grid-template-columns: repeat(2,1fr); */
+    background-color: var(--footer-bg-color);
 
+    color: var(--light-text-color);
 
-  }
+    text-align: center;
 
+    padding: 2rem;
 }
 
-@media (max-width:768px) {
+/* ==================================================
+   RESPONSIVE - TABLET
+================================================== */
+
+@media (max-width: 1023px) {
+
     .pet-grid {
-    /* grid-template-columns: repeat(1,1fr); */
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 
-
-  }
-  .category-nav label {
-    display: block;
-    margin-bottom: 0.4rem 2rem;
-    border-radius: 10px;
-  }
-  nav a:hover {
-  transform: translateY(-10px);
-}
-
-.tip-box {
-    display: grid;
-  grid-template-columns: repeat(1,fr);
+    .tip-tager {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 }
 
+/* ==================================================
+   RESPONSIVE - MOBILE
+================================================== */
+
+@media (max-width: 767px) {
+
+    .category-nav {
+        flex-direction: column;
+
+        gap: 0.5rem;
+    }
+
+    .category-nav label {
+        width: 100%;
+
+        max-width: 300px;
+
+        text-align: center;
+    }
+
+    .container {
+        width: calc(100% - 1rem);
+
+        margin: 1rem auto;
+    }
+
+    .pet-grid {
+        grid-template-columns: 1fr;
+
+        gap: 1rem;
+    }
+
+    .pet-card {
+        margin: 0;
+    }
+
+    .pet-card img {
+        height: auto;
+
+        max-height: 20rem;
+    }
+
+    .tip-card {
+        width: 100%;
+
+        margin: 1rem auto;
+
+        padding: 1rem;
+    }
+
+    .tip-tager {
+        grid-template-columns: 1fr;
+    }
+
+    .tip-box-tag {
+        margin: 0.3rem 0;
+    }
+
+    .form-radio {
+        width: calc(100% - 1rem);
+
+        margin: 1rem auto;
+
+        padding: 1rem;
+    }
+
+    .radio-option {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .radio-item label {
+        display: block;
+
+        text-align: center;
+    }
+
+    .pet-table {
+        min-width: 700px;
+    }
+
 }
-
-
-
